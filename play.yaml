@@ -1,0 +1,8 @@
+---
+- name: Harden Server
+  hosts: Ubuntu<Hostnameofserver>
+  become: yes
+  gather_facts: yes
+  roles:
+    - ubuntu2004_cis-main
+
